@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginTop="5dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:orientation="horizontal"
+
+        >
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:id="@+id/imagenPica"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+
+            app:civ_border_width="2dp"
+            app:civ_border_color="#fff"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/txtNombre"
+                android:layout_height="wrap_content"
+                android:text="Nombre"
+                />
+
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/txtNick"
+                android:layout_height="wrap_content"
+                android:text="Nick"
+                />
+
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/txtDate"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/delete"
+                android:src="@drawable/ic_delete"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
